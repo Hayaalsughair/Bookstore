@@ -1,0 +1,37 @@
+﻿@model Bookstore.Models.Book
+
+<div class="half left cf">
+    <label class="bookLable">
+        <span class="bookTitle">Book Title </span>
+        <input asp-for="@Model.Title" placeholder="write title">
+    </label>
+    <label class="bookLable">
+        <span class="bookTitle"> Author </span>
+        <input asp-for="@Model.Author" placeholder="write author name">
+
+    </label>
+    <label class="bookLable">
+        <span class="bookTitle"> Price </span>
+        <input asp-for="@Model.Price" placeholder="Price should between 1JD - 100JD">
+
+    </label>
+    <label class="bookLable">
+        <span class="bookTitle"> Genre </span>
+        <input asp-for="@Model.Genre" placeholder="Write type of book ">
+
+    </label>
+    @if(Model.Id > 0)
+    {
+        <input type="hidden" name="Id" value="@Model.Id" />
+    }
+    </div>
+    <div asp-validation-summary="All"></div>
+@if(Model.Id > 0)
+{
+    <button type="submit" class="formBtn">Update</button>
+}
+else
+{
+    <button type="submit" class="formBtn">Submit</button>
+
+}
