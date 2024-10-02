@@ -1,0 +1,17 @@
+﻿@model Bookstore.Models.Book
+
+@{
+    ViewData["Title"] = "Book Details";
+}
+<h2>Book Details</h2>
+
+<div>
+    <h4 class="h4Title">@Model.Title</h4>
+    <p><strong>Author:</strong> @Model.Author</p>
+    <p><strong>Price:</strong> @Model.Price <strong>$</strong></p>
+    <p><strong>Genre:</strong> @Model.Genre</p>
+</div>
+
+<a class="btn btn-secondary" asp-action="Index">Back to List</a>
+<a class="btn btn-info" asp-action="EditBook" asp-route-id="@Model.Id">Edit</a>
+<a class="btn btn-danger" asp-action="DeleteBook" asp-route-id="@Model.Id">Delete</a>
