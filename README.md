@@ -24,7 +24,7 @@ Before you begin, ensure you have met the following requirements:
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/bookstore.git
+   git clone https://github.com/Hayaalsughair/Bookstore.git
    cd bookstore
 2. **Open the project in Visual Studio**:
 	Launch Visual Studio.
